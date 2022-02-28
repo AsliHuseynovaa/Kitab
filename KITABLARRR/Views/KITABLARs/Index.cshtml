@@ -1,0 +1,63 @@
+﻿@model IEnumerable<KITABLARRR.Models.KITABLAR>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KITAB_AD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KITAB_YAZAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KITAB_SEHIFE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KITAB_QIYMET)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KITAB_TARIX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KITAB_CAPEV)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KITAB_AD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KITAB_YAZAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KITAB_SEHIFE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KITAB_QIYMET)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KITAB_TARIX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KITAB_CAPEV)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

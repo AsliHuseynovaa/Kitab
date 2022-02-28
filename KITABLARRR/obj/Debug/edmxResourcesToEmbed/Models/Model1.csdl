@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ORIENTDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="KITABLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KITAB_AD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KITAB_YAZAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KITAB_SEHIFE" Type="Int32" />
+    <Property Name="KITAB_QIYMET" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="KITAB_TARIX" Type="DateTime" Precision="0" />
+    <Property Name="KITAB_CAPEV" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ORIENTDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="KITABLARs" EntityType="Self.KITABLAR" />
+  </EntityContainer>
+</Schema>

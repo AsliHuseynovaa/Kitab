@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ORIENTDBModelStoreContainer" CdmEntityContainer="ORIENTDBEntities">
+    <EntitySetMapping Name="KITABLARs">
+      <EntityTypeMapping TypeName="ORIENTDBModel.KITABLAR">
+        <MappingFragment StoreEntitySet="KITABLAR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KITAB_AD" ColumnName="KITAB_AD" />
+          <ScalarProperty Name="KITAB_YAZAR" ColumnName="KITAB_YAZAR" />
+          <ScalarProperty Name="KITAB_SEHIFE" ColumnName="KITAB_SEHIFE" />
+          <ScalarProperty Name="KITAB_QIYMET" ColumnName="KITAB_QIYMET" />
+          <ScalarProperty Name="KITAB_TARIX" ColumnName="KITAB_TARIX" />
+          <ScalarProperty Name="KITAB_CAPEV" ColumnName="KITAB_CAPEV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
